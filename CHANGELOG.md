@@ -1,3 +1,12 @@
+=== normalize-scss 3.0.3 (October 17, 2015)
+
+* Upgrade to Normalize.css 3.0.3.
+
+=== normalize-scss 3.0.2+normalize.3.0.2 (November 6, 2014)
+
+* Upgrade to Normalize.css 3.0.2.
+* Added Compass' output-rhythm() mixin.
+
 === normalize-scss 3.0.1+normalize.3.0.1 (August 26, 2014)
 
 * Update figure ruleset to output for Safari 6.
@@ -24,6 +33,18 @@
 
 
 == normalize.css change log
+
+=== HEAD
+
+=== 3.0.3 (March 30, 2015)
+
+* Remove unnecessary vendor prefixes.
+* Add `main` property.
+
+=== normalize.css 3.0.2 (October 4, 2014)
+
+* Only alter `background-color` of links in IE 10.
+* Add `menu` element to HTML5 display definitions.
 
 === normalize.css 3.0.1 (March 27, 2014)
 

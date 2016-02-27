@@ -1,31 +1,32 @@
 # -*- encoding: utf-8 -*-
 
-Gem::Specification.new do |s|
-  s.name        = 'normalize-scss'
+Gem::Specification.new do |spec|
+  spec.name        = 'normalize-scss'
 
-  s.summary     = %q{The Sass/Compass version of Normalize.css}
-  s.description = %q{This is the Sass/Compass version of Normalize.css, a collection of HTML element and attribute rulesets to normalize styles across all browsers. This port aims to use the best partials from Compass to make Normalize even easier to integrate with your website.}
+  spec.summary     = %q{The Sass version of Normalize.css}
+  spec.description = %q{This is the Sass version of Normalize.css, a collection of HTML element and attribute rulesets to normalize styles across all browsers. This port aims to use a light dusting of Sass to make Normalize even easier to integrate with your website.}
 
-  s.homepage    = 'https://github.com/JohnAlbin/normalize-scss'
-  s.rubyforge_project =
+  spec.homepage    = 'https://github.com/JohnAlbin/normalize-scss'
+  spec.rubyforge_project =
 
-  s.version     = '3.0.1'
-  s.date        = '2014-08-26'
-  s.licenses    = ['GPL-2']
+  spec.version     = '4.0.3'
+  spec.date        = '2015-11-29'
+  spec.licenses    = ['GPL-2']
 
-  s.authors     = ['John Albin Wilkins']
-  s.email       = 'virtually.johnalbin@gmail.com'
+  spec.authors     = ['John Albin Wilkins']
+  spec.email       = 'virtually.johnalbin@gmail.com'
 
-  s.add_runtime_dependency('sass',          '~> 3.3', '>= 3.3.0')
-  s.add_runtime_dependency('compass-core',  '~> 1.0', '>= 1.0.0')
+  spec.add_runtime_dependency('sass', '~> 3.3')
+  spec.add_runtime_dependency('support-for', '~> 1.0')
 
-  s.files       = %w[
-    _normalize.scss
+  spec.files       = `git ls-files`.split($/).select {|f| File.exist?(f) && f =~ %r{^(lib|sass)/} }
+  spec.files       += %w(
+    bower.json
     CHANGELOG.md
     CONTRIBUTING.md
-    lib/normalize-scss.rb
     LICENSE.md
     normalize-scss.gemspec
+    package.json
     README.md
-  ]
+  )
 end
